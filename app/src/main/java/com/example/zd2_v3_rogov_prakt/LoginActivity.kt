@@ -73,7 +73,7 @@ class LoginActivity : AppCompatActivity() {
             val intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)
         } else {
-            Snackbar.make(findViewById(android.R.id.content),"Неверный email или пароль",Snackbar.LENGTH_SHORT).show()
+            Snackbar.make(findViewById(android.R.id.content),"Неверный логин или пароль",Snackbar.LENGTH_SHORT).show()
         }
     }
 }

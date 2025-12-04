@@ -67,16 +67,50 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:layout_marginTop="10dp">
-                <EditText
-                    android:id="@+id/temperature"
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Температура (36.6)"
-                    android:inputType="numberDecimal"
-                    android:textSize="16sp"
-                    android:textColorHint="@color/pink"
-                    android:textColor="@color/pink"
-                    android:backgroundTint="@color/pink"/>
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Температура: "
+                        android:textSize="16sp"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/pink"/>
+
+                    <TextView
+                        android:id="@+id/temperatureValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="36.6"
+                        android:textSize="16sp"
+                        android:textColor="@color/pink"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="°C"
+                        android:textSize="16sp"
+                        android:textColor="@color/pink"
+                        android:layout_marginStart="4dp"/>
+                </LinearLayout>
+
+                <SeekBar
+                    android:id="@+id/temperatureSlider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="80"
+                android:progress="26"
+                android:min="0"
+                android:thumbTint="@color/pink"
+                android:progressTint="@color/pink"
+                android:progressBackgroundTint="@color/pink"/>
             </LinearLayout>
 
         </LinearLayout>
@@ -90,6 +124,5 @@
         android:background="@color/magenta"
         android:textAllCaps="false"
         android:textColor="@color/pink"
-        android:onClick="Reg"
         android:layout_marginTop="10dp"/>
 </LinearLayout>
