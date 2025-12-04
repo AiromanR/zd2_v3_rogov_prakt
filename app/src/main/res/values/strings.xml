@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">zd2_v3_rogov</string>
+    <string name="login">Логин</string>
+    <string name="password">Пароль</string>
+    <string name="text">Авторизуйтесь</string>
+    <string name="register">Зарегистрироваться</string>
+    <string name="sign">Войти</string>
+    <string name="addz">Добавить запись</string>
+    <string name="name">Название записи</string>
+    <string name="zad">Описание</string>
+    <string name="addb">Добавить</string>
+</resources>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/back">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Добавить запись здоровья"
+        android:textColor="@color/pink"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textSize="18dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="18dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:hint="Пульс (уд/мин)"
+                    android:inputType="number"
+                    android:textColorHint="@color/pink"
+                    android:textColor="@color/pink"
+                    android:backgroundTint="@color/pink"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+                <EditText
+                    android:id="@+id/pressure"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Давление (120/80)"
+                    android:textSize="16sp"
+                    android:textColorHint="@color/pink"
+                    android:textColor="@color/pink"
+                    android:backgroundTint="@color/pink"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+                <EditText
+                    android:id="@+id/temperature"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Температура (36.6)"
+                    android:inputType="numberDecimal"
+                    android:textSize="16sp"
+                    android:textColorHint="@color/pink"
+                    android:textColor="@color/pink"
+                    android:backgroundTint="@color/pink"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnReg"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Добавить запись"
+        android:background="@color/magenta"
+        android:textAllCaps="false"
+        android:textColor="@color/pink"
+        android:onClick="Reg"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>
